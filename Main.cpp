@@ -39,7 +39,6 @@ int main()
 
 	karabas.Bark();	
 	
-	
 	Dog* myDog = new Dog();
 	Dog::showDogCount();
 	myDog->setName("comar");
