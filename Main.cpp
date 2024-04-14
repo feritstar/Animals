@@ -36,6 +36,11 @@ int main()
 	karabas.sleep(karabas.getSleepHour());
 
 	karabas.Bark();
+
+	karabas.showDogCount();
+	karabas.increaseDogCount();
+	karabas.showDogCount();
+
 	cout << endl;
 
 	Bird yildiz;
