@@ -7,5 +7,6 @@ class Cat : public BaseAnimal
 public:
 	Cat();
 	void CatchMouse();
+	void makeSound();
 };
 

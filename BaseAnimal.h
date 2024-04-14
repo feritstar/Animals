@@ -20,6 +20,8 @@ public:
 	void getFeed(string _food);
 	void sleep(int _sleepHour);
 
+	virtual void makeSound();
+
 private:
 	string name;
 	string food;

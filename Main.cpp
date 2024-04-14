@@ -4,6 +4,13 @@
 
 using namespace std;
 
+void soundMake(BaseAnimal* animal)
+{
+	animal->makeSound();
+	animal->makeSound();
+	animal->makeSound();
+}
+
 int main()
 {
 	cout << "* * * * * * * * * * * * * * *" << endl;
@@ -48,6 +55,11 @@ int main()
 
 	cout << endl;
 
+	soundMake(&karabas);
+	cout << endl;
+	soundMake(&ceviz);
+
+	cout << endl;
 	Bird yildiz;
 
 	yildiz.setName("yildiz");

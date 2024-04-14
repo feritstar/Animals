@@ -43,3 +43,8 @@ void BaseAnimal::sleep(int _sleepHour)
 {
 	cout << "Animal " << name << " is slept about " << _sleepHour << " hours." << endl;
 }
+
+void BaseAnimal::makeSound()
+{
+	cout << "MakeSound method is called!!" << endl;
+}

@@ -21,3 +21,8 @@ void Dog::showDogCount()
 {
 	cout << "Dog count is: " << Dog::dogCount << endl;
 }
+
+void Dog::makeSound()
+{
+	cout << "Hav Hav" << endl;
+}

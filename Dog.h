@@ -9,6 +9,7 @@ public:
 	~Dog();
 	void Bark();
 	static void showDogCount();
+	void makeSound();
 
 private:
 	static int dogCount;
