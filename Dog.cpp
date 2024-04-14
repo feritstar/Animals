@@ -4,16 +4,17 @@ int Dog::dogCount = 0;
 
 Dog::Dog()
 {
+	dogCount++;
+}
+
+Dog::~Dog()
+{
+	dogCount--;
 }
 
 void Dog::Bark()
 {
 	cout << Dog::getName() << " is barking." << endl;
-}
-
-void Dog::increaseDogCount()
-{
-	dogCount++;
 }
 
 void Dog::showDogCount()

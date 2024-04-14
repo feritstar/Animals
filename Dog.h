@@ -6,9 +6,11 @@ class Dog : public BaseAnimal
 {
 public:
 	Dog();
+	~Dog();
 	void Bark();
+	static void showDogCount();
+
+private:
 	static int dogCount;
-	void increaseDogCount();
-	void showDogCount();
 };
 

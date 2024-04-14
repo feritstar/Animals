@@ -26,7 +26,9 @@ int main()
 	ceviz.CatchMouse();
 	cout << endl;
 
+	Dog::showDogCount();
 	Dog karabas;
+	Dog::showDogCount();
 
 	karabas.setName("karabas");
 	karabas.setFood("kemik");
@@ -35,11 +37,15 @@ int main()
 	karabas.getFeed(karabas.getFood());
 	karabas.sleep(karabas.getSleepHour());
 
-	karabas.Bark();
-
-	karabas.showDogCount();
-	karabas.increaseDogCount();
-	karabas.showDogCount();
+	karabas.Bark();	
+	
+	
+	Dog* myDog = new Dog();
+	Dog::showDogCount();
+	myDog->setName("comar");
+	
+	delete myDog;
+	Dog::showDogCount();
 
 	cout << endl;
 
