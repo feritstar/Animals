@@ -71,6 +71,32 @@ int main()
 
 	yildiz.Sing();
 	yildiz.Fly();
+	cout << endl;
+
+	try
+	{
+		int x;
+		cout << "Enter a value for x: ";
+		cin >> x;
+
+		if (x < 0)
+		{
+			throw Error("Error Message No:1");
+		}
+		else if (x == 0)
+		{
+			throw 101;
+		}
+		cout << "end of try-catch block... x: " << x << endl;
+	}
+	catch (Error err)
+	{
+		cout << "Error is thrown! Special Error Message is : " << err.getErrorMessage() << endl;
+	}
+	catch (int errorCode)
+	{
+		cout << "Error is thrown! Special Error Message is : " << errorCode << endl;
+	}
 
 	cout << endl;
 	return 0;
